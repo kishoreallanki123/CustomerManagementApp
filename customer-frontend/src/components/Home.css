@@ -1,0 +1,46 @@
+.home-dashboard { display:flex; flex-direction:column; gap:18px; }
+
+/* Hero */
+.home-hero {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:18px;
+  gap:16px;
+}
+.hero-content h2 { margin:0; color:#0f172a; font-size:1.4rem; }
+.hero-sub { margin:6px 0 0; color:#64748b; }
+
+/* Illustration */
+.hero-illustration { width:220px; height:120px; display:flex; align-items:center; justify-content:center; }
+
+/* Metrics */
+.metrics { display:grid; grid-template-columns: repeat(4, 1fr); gap:12px; }
+.metric-card {
+  background:linear-gradient(180deg,#ffffff,#fbfeff);
+  border:1px solid #eef2f7;
+  padding:14px;
+  border-radius:10px;
+  text-align:center;
+  box-shadow:0 6px 18px rgba(2,6,23,0.04);
+}
+.metric-title { font-size:0.85rem; color:#64748b; margin-bottom:6px; }
+.metric-value { font-size:1.5rem; font-weight:700; color:#0f172a; }
+
+/* Recent list */
+.recent-card { padding:14px; }
+.recent-list { list-style:none; margin:10px 0 0; padding:0; display:flex; flex-direction:column; gap:10px; }
+.recent-item { display:flex; justify-content:space-between; align-items:center; padding:10px; border-radius:8px; background:#fbfdff; border:1px solid #eef2f7; }
+.recent-name { font-weight:600; color:#0f172a; }
+.recent-email { font-size:0.9rem; color:#64748b; }
+.recent-date { font-size:0.85rem; color:#94a3b8; }
+
+/* Small screens */
+@media (max-width: 900px) {
+  .metrics { grid-template-columns: repeat(2, 1fr); }
+  .hero-illustration { display:none; }
+}
+
+@media (max-width: 520px) {
+  .metrics { grid-template-columns: 1fr; }
+}

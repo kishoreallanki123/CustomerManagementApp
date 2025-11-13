@@ -1,0 +1,72 @@
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.list-item input {
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: #f8fafc;
+  margin-right: 10px;
+}
+
+.btn-active {
+  padding: 5px 10px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-active.active {
+  background-color: #4caf50;
+  color: white;
+}
+
+.btn-active.inactive {
+  background-color: #f44336;
+  color: white;
+}
+
+.btn-edit, .btn-delete {
+  padding: 5px 10px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-edit {
+  background-color: #2196f3;
+  color: white;
+}
+
+.btn-delete {
+  background-color: #f44336;
+  color: white;
+}
+
+/* Professional Save/Cancel styles in edit mode */
+.edit-actions { display: flex; gap: 8px; }
+.btn-primary {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(90deg,#1976d2,#21cbf3);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+.btn-secondary {
+  padding: 8px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: #fff;
+  color: #0f172a;
+  font-weight: 600;
+  cursor: pointer;
+}
